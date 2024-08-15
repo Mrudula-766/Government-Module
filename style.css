@@ -1,0 +1,178 @@
+
+/*header part*/
+.header {
+    
+    background: linear-gradient(to right,#c88d8d, #b391bf);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+/* button container(div) */
+.button-container {
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+}
+/*home and exit button*/
+.button-container button {
+    margin-left: 10px;
+    background-color: #b20d0d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+
+/* view list button*/
+#viewbutton {
+    background-color: rgb(48, 109, 201);
+    margin-top: 15px;
+    /* margin-left: 1400px; */
+    position: absolute;
+    right: 20px;
+    width: 80px;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+/* page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 214, 188);
+}
+/* container division*/
+/* .container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+} */
+/* forms */
+form {
+    /*    width: calc(30% - 15px);         */
+    /* Set width for each form */
+    /* width: 380px; */
+    /* margin-inline: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+}
+#form-page{
+    width: 380px;
+    margin-inline: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+/* title of form */
+.section_title {
+    padding: 1px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(238, 238, 188);
+    width: 100%;
+    height: auto;
+}
+
+/*input area style*/
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgb(224, 223, 223);
+}
+
+/*media division*/
+.media-container {
+    display: flex;
+    justify-content: space-between;      /* Distribute space between the image preview and video capture button */
+    align-items: center;         /* Align items vertically */
+    margin-bottom: 10px; 
+}
+
+/*1 st div*/
+.image-upload {
+    flex: 1;             /* Take up available space */
+    margin-right: 5px;               /* Adjust margin between elements */
+}
+
+/*2nd div*/
+.image-capture {
+    flex: 1;                /* Take up available space */  
+}
+
+/*view the uploaded image*/
+.image-upload img {
+    margin-top:20px;
+    max-width: 80px;
+    height: 80px;
+}
+
+/*capture button*/
+#captureButton {
+    width: fit-content;
+    margin-top: 20px;
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* live photo */
+#video {
+    margin-top: 10px;
+    border: 1px solid #fafaf2;
+    width: 80px;
+    height: 80px;
+}
+
+/* save button */
+input[type="submit"] {
+    width: 70px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* authority button */
+#Authority_Button {
+    width: fit-content;
+    /* width: 80px; */
+    background-color: rgb(48, 109, 201);
+    color: white;
+    padding: 7px 15px;
+    margin-top: 15px;
+    margin-left: 170px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

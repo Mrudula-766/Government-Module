@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage List</title>
+    
+    <link rel="stylesheet" href="/show-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>Marriage Registration List/ विवाह नोंदणी यादी</h1>
+        <div class="button-container">
+            <button onclick="window.location.href='home.html'">होम</button>
+            <button onclick="window.close()">
+                बाहेर पडा</button>
+        </div>
+    </div>
+
+    <div>
+        <form method="get" action="/users/new">
+            <button style="margin: 8px; padding: 8px; color: blue; position: absolute; top: 13px; right: 0px;">New Registration</button>
+        </form>
+        
+    </div>
+    <table>
+        <tr>
+            <!-- <th>Sr.No</th> -->
+            <th>Section No</th>
+            <th>husband_name</th>
+            <th>Wife_Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Remove</th>
+            <th>Print</th>
+            <th>Edit</th>
+        </tr>
+        <% for(user of users) { %> 
+            <tr>
+                <td><%= user.section_number %></td>
+                <td><%= user.husband_name %></td>
+                <td><%= user.wife_name %></td>
+                <td><%= user.marriage_date %></td>
+                <td><%= user.marriage_location %></td>
+                <td>
+                    <form method="post" action="/users/<%=user.srno%>?_method=delete" style="color: red;">
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                    </form>
+                </td>
+                <td>
+                    <span style="color: blue;">
+                        <i class="fa-solid fa-print"></i>
+                    </span>
+                </td>
+                <td>
+                    <form method="get" action="/users/<%=user.srno%>/edit">
+                        <button><i class="fa-regular fa-pen-to-square"></i></button>
+                    </form>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>

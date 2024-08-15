@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Marriage Data</title>
+</head>
+<body>
+    <h2>Edit here</h2>
+    <span class="edit_form">
+        <form method="post" action="/users/<%=user.srno%>?_method=patch">
+            <textarea name="husband_name" placeholder="Husband's Name"><%= user.husband_name %></textarea>
+            <textarea name="wife_name" placeholder="Wife's Name"><%= user.wife_name %></textarea>
+            
+            <button style="display: flex;">Edit</button>
+        </form>
+    </span>
+</body>
+</html>

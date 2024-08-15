@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Marriage Registration / विवाह नोंदणी</h1>
+        <div class="button-container">
+            <button onclick="window.location.href='home.html'">होम</button>
+            <button onclick="window.close()">
+                बाहेर पडा</button>
+        </div>
+    </div>
+
+    <button id="viewbutton"> यादी पहा</button>
+
+    <div class="container">
+
+                    <!--1st form-->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="section_title">
+                <h2>Husband's Details</h2>
+            </div>
+            <label for="husband_name">Name/नाव:</label>
+            <input type="text" name="husband_name" placeholder="Full Name" required>
+            <input type="text" name="husband_name" placeholder="पूर्ण नाव" required>
+            <label for="husband_aadhar">Aadhar Number/आधार क्रमांक:</label>
+            <input type="number" name="husband_aadhar" placeholder="Aadhar Card Number" required>
+            <input type="number" name="husband_aadhar" placeholder="आधार क्रमांक" required>
+            <label for="husband_address">Address/पत्ता:</label>
+            <input type="text" name="husband_address" placeholder="Address" required>
+            <input type="text" name="husband_address" placeholder="पत्ता" required>
+
+                    <!--photo uploader and capture-->
+            <div class="media-container">
+                <div class="image-upload">
+                    <label for="husband_photo">Upload photo:</label>
+                    <input type="file" name="husband_photo" accept="image/*" onchange="displayImage()" required>
+                    <img id="uploadedImage" src="#" alt="Uploaded Image">
+                </div>
+                <div class="image-capture">
+                    <button id="captureButton">Capture</button>
+                    <video id="video" autoplay></video>
+                </div>
+            </div>
+        </form>
+
+                    <!--2 nd form-->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="section_title">
+                <h2>Wife's Details</h2>
+            </div>
+            <label for="wife_name">Name/नाव:</label>
+            <input type="text" name="wife_name" placeholder="Full Name" required>
+            <input type="text" name="wife_name" placeholder="पूर्ण नाव" required>
+            <label for="wife_aadhar">Aadhar Number/आधार क्रमांक:</label>
+            <input type="number" name="wife_aadhar" placeholder="Aadhar Card Number" required>
+            <input type="number" name="wife_aadhar" placeholder="आधार क्रमांक" required>
+            <label for="wife_name">Addesss/पत्ता:</label>
+            <input type="text" name="wife_address" placeholder="Address" required>
+            <input type="text" name="wife_address" placeholder="पत्ता" required>
+
+                    <!--photo uploader and capture-->
+
+            <div class="media-container">
+                <div class="image-upload">
+                    <label for="wife_photo">Upload photo:</label>
+                    <input type="file" name="wife_photo" accept="image/*" onchange="displayImage()" required>
+                    <img id="uploadedImage" src="#" alt="Uploaded Image">
+                </div>
+                <div class="image-capture">
+                    <button id="captureButton">Capture</button>
+                    <video id="video" autoplay></video>
+                </div>
+            </div>
+        </form>
+
+                    <!--3 rd form-->
+        <form action="#" method="post">
+            <div class="section_title">
+                <h2>Marriage Details</h2>
+            </div>
+            <label for="atomic_number">Atomic Number/अनु क्रमांक:</label>
+            <input type="number" name="atomic_number" placeholder="atomic number" required>
+            <input type="number" name="atomic_number" placeholder="अनु क्रमांक" required>
+            <label for="section_number">Section Number/खंड क्रमांक:</label>
+            <input type="number" name="section_number" placeholder="section number" required>
+            <input type="number" name="section_number" placeholder="खंड क्रमांक" required>
+            <label for="marriage_date">Date of Marriage:</label>
+            <input type="date" name="marriage_date" placeholder="Date of Marriage" required>
+            <label for="marriage_location">Location of Marriage:</label>
+            <input type="text" name="marriage_location" placeholder="Location of Marriage" required>
+            <input type="text" name="marriage_location" placeholder="विवाह स्थळ" required>
+            <button id="Authority_Button">Authority</button>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</body>
+</html>
